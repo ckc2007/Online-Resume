@@ -209,3 +209,22 @@ footer li {
     background-color: greenyellow;
   }
 }
+
+/* buttons and pseudo classes */
+/* The user's cursor is positioned over the element */
+img:hover {
+  background-color: #772014;
+  color: #fff;
+}
+
+/* The user is actively pressing down on the element */
+img:active {
+  font-size: 180%;
+  box-shadow: 0 0 10px #000 inset;
+}
+
+/* The element is currently in focus, either by tabbing to or clicking on it */
+img:focus {
+  outline: none;
+  border-color: #8ac4ff;
+}
