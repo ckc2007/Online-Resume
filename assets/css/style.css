@@ -43,6 +43,12 @@ header nav {
 main {
     padding: 15px;
 }
+
+main section {
+    /* eventually i want a left handed thick bar in blue */
+    border-bottom: 5px solid black;
+    padding: 10px;
+}
 .card {
     width: 400px;
     height: 400px;
@@ -71,9 +77,9 @@ main img {
 }
 
 /* when flex is implemented i want to make sure that it fills the whole row only on this one */
-#main-work {
+/* #main-work {
     width: 100%;
-}
+} */
 
 .resume {
     background-color: bisque;
