@@ -7,7 +7,7 @@
 /* from homework 1 as a starting point for style */
 /* main page style and font size */
 body {
-    background-color: #d9dcd6;
+    background-color: rgb(251, 250, 250);
 }
 
 a {
@@ -31,10 +31,16 @@ h1 {
     display: inline-block;
     font-size: 50px;
 }
-/* slight coloration on last name */
+/* slight coloration on last name - same as the main background color */
 h1 #chorney {
-    color: whitesmoke;
+    color: rgb(251, 250, 250);
 }
+/* tagline color slightly darker than main name */
+#tagline {
+    color: rgb(251, 246, 246);
+}
+
+
 /* nav, top right */
 header nav {
     padding-top: 15px;
