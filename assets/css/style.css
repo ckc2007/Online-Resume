@@ -50,8 +50,11 @@ main section {
     padding: 10px;
 }
 .card {
-    width: 450px;
-    height: 450px;
+    width: 409px;
+    height: 409px;
+    text-align: center;
+    border: 10px solid grey;
+    margin: 10px
 }
 
 main img {
@@ -59,7 +62,7 @@ main img {
     height: 350px;
     width: 350px;
     background-color: lightgreen;
-    margin: 20px;
+    margin: 0px;
     padding: 20px;
     border: 10px solid darkred;
 }
