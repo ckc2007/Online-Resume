@@ -133,10 +133,11 @@ footer {
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
     text-align: center;
+    background-color: #78a9c7;
 }
 /* tagline with heart emoji */
 footer h4 {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 /* id for header name Chorney style */
