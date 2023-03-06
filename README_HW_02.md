@@ -39,6 +39,9 @@ THEN I find a footer with relevant contact info and links
 ## Mock-Up
 
 here is a screenshot of my deployed page:
+```
+LINK: https://ckc2007.github.io/hw-02-advanced-css-portfolio/
+```
 
 ![demo page](./assets/images/wk-02-deployed.png)
 
