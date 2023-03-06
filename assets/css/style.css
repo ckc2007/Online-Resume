@@ -210,26 +210,21 @@ footer li {
   }
 }
 
-/* buttons and pseudo classes */
-/* The user's cursor is positioned over the element */
+/* buttons and pseudo classes below: */
 img:hover {
   background-color: #8996cf;
   color: #fff;
 }
 
-/* The user is actively pressing down on the element */
 img:active {
   font-size: 180%;
   box-shadow: 0 0 10px #000 inset;
 }
 
-/* The element is currently in focus, either by tabbing to or clicking on it */
 img:focus {
   outline: none;
   border-color: #8ac4ff;
 }
-
-
 
 /* biggest image response */
 #biggest-image:hover {
@@ -237,34 +232,27 @@ img:focus {
   color: #fff;
 }
 
-/* The user is actively pressing down on the element */
 #biggest-image:active {
   font-size: 180%;
   box-shadow: 0 0 10px #000 inset;
 }
 
-/* The element is currently in focus, either by tabbing to or clicking on it */
 #biggest-image:focus {
   outline: none;
   border-color: #8ac4ff;
 }
 
-
-
-
-/* nav buttons */
+/* nav buttons/list items */
 li:hover {
   background-color: #fed7d1;
   color: #fff;
 }
 
-/* The user is actively pressing down on the element */
 li:active {
   font-size: 180%;
   box-shadow: 0 0 10px #000 inset;
 }
 
-/* The element is currently in focus, either by tabbing to or clicking on it */
 li:focus {
   outline: none;
   border-color: #8ac4ff;
