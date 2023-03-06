@@ -108,11 +108,12 @@ h3 {
   width: 409px;
   height: 409px;
   text-align: center;
+  /* for now only the first work item will have a solid border to make it stand out */
   border: 5px solid rgb(202, 197, 197);
   margin: 10px;
 }
 
-/* this part is super important - this gave us the space betwee, and the wrap property, making the horizontal flow down and resize */
+/* this part is super important - this gave us the space between, and the wrap property, making the horizontal flow down and resize */
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -130,8 +131,15 @@ h3 {
 }
 
 .resume {
-  /* margin-bottom: 15px; */
   background-color: rgb(255, 242, 227);
+}
+
+.resume h2 {
+  margin-bottom: 10px;
+}
+
+.resume li {
+  /* i want this to be clickable to show unshow the files */
 }
 
 /* footer */
