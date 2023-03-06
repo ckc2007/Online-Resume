@@ -213,12 +213,12 @@ footer li {
 /* buttons and pseudo classes below: */
 img:hover {
   background-color: #8996cf;
-  color: #fff;
+  color: rgb(232, 222, 222);
 }
 
 img:active {
-  font-size: 180%;
-  box-shadow: 0 0 10px #000 inset;
+  font-size: 150%;
+  box-shadow: 0 0 10px rgb(128, 125, 125) inset;
 }
 
 img:focus {
@@ -233,27 +233,27 @@ img:focus {
 }
 
 #biggest-image:active {
-  font-size: 180%;
-  box-shadow: 0 0 10px #000 inset;
+  font-size: 150%;
+  box-shadow: 0 0 10px rgb(131, 127, 127) inset;
 }
 
 #biggest-image:focus {
   outline: none;
-  border-color: #8ac4ff;
+  border-color: #b2d1f0;
 }
 
 /* nav buttons/list items */
 li:hover {
   background-color: #fed7d1;
-  color: #fff;
+  color: rgb(223, 205, 205);
 }
 
 li:active {
-  font-size: 180%;
-  box-shadow: 0 0 10px #000 inset;
+  font-size: 150%;
+  box-shadow: 0 0 10px rgb(79, 77, 77) inset;
 }
 
 li:focus {
   outline: none;
-  border-color: #8ac4ff;
+  border-color: #b8dcff;
 }
