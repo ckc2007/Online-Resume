@@ -148,9 +148,14 @@ h3 {
   margin-bottom: 10px;
 }
 
+.resume ul {
+    list-style:circle;
+}
+
 .resume li {
   font-weight: 600;
   margin: 5px;
+  margin-left: 30px;
   /* i want this to be clickable to show unshow the files */
 }
 
