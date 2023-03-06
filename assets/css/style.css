@@ -4,8 +4,24 @@
     padding: 0;
     margin: 0;
 }
+
+.card {
+    width: 400px;
+    height: 400px;
+}
+
+main img {
+    height: 350px;
+    width: 350px;
+}
+
+
+
+
+
+
 /* main page style and font size */
-body {
+/* body {
     background-color: rgb(245, 245, 245);
 }
 
@@ -16,60 +32,60 @@ a {
 
 p {
     font-size: 16px;
-}
+} */
 
 /* header, top; nav, top right */
-header {
+/* header {
     padding: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
     background-color: rgb(121, 121, 240);
     color: #ffffff;
-}
+} */
 /* main title - my name */
-h1 {
+/* h1 {
     display: inline-block;
     font-size: 50px;
-}
+} */
 /* slight coloration on last name - same as the main background color */
-h1 #chorney {
+/* h1 #chorney {
     color: rgb(251, 250, 250);
-}
+} */
 /* tagline color slightly darker than main name */
-#tagline {
+/* #tagline {
     color: rgb(251, 246, 246);
-}
+} */
 
 
 /* nav, top right */
-header nav {
+/* header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 20px;
-}
+} */
 /* nav li, top right */
-header li {
+/* header li {
     display: inline-block;
     margin-left: 25px;
-}
+} */
 
 /* main image format, no change */
-.hero {
+/* .hero {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
-}
+} */
 
 /* main section with three bullet points, center, left */
-main {
+/* main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
-}
+} */
 /* individual bullet points */
 /* main section {
     margin-bottom: 20px;
@@ -80,14 +96,14 @@ main {
     color: #ffffff;
 } */
 
-main h2 {
+/* main h2 {
     margin-bottom: 20px;
     font-size: 36px;
-}
+} */
 
-main img {
+/* main img {
     max-height: 200px;
-}
+} */
 /* main section image placement selectors */
 /* .float-left {
     float: left;
@@ -128,20 +144,20 @@ main img {
 } */ */
 
 /* footer with copyright */
-footer {
+/* footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
     text-align: center;
     background-color: #78a9c7;
-}
+} */
 /* tagline with heart emoji */
-footer h4 {
+/* footer h4 {
     font-size: 30px;
-}
+} */
 
 /* id for header name Chorney style */
-#chorney {
+/* #chorney {
 }
 
 #tagline{
@@ -150,5 +166,5 @@ footer h4 {
 
 header {
 
-}
+} */
 
