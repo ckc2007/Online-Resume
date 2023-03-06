@@ -11,6 +11,7 @@ body {
 }
 
 header {
+    line-height: 30px;
     padding: 15px;
     color: whitesmoke;
     background-color: blue;
@@ -35,28 +36,7 @@ header nav {
     background-color: aquamarine;
 }
 
-.about-me {
-    background-color: antiquewhite;
-}
-
-.work {
-    background-color: aqua;
-}
-
-.resume {
-    background-color: bisque;
-}
-
-h2 {
-    font-size: larger;
-    font-weight: bold;
-}
-
-h3 {
-    font-size: medium;
-    font-weight: 800;
-}
-
+/* MAIN */
 main {
     padding: 15px;
 }
@@ -72,7 +52,41 @@ main img {
 }
 
 
+/* sections */
+.about-me {
+    line-height: 20px;
+    background-color: antiquewhite;
+}
+
+.work {
+    background-color: aqua;
+}
+
+/* when flex is implemented i want to make sure that it fills the whole row only on this one */
+#main-work {
+    width: 100%;
+}
+
+.resume {
+    background-color: bisque;
+}
+
+/* headings */
+h2 {
+    font-size: larger;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: medium;
+    font-weight: 800;
+}
+
+
+
+/* footer */
 footer {
+    line-height: 30px;
     padding: 15px;
     color: whitesmoke;
     background-color: lightblue;
