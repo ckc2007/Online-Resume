@@ -39,13 +39,14 @@ header img {
 nav {
     background-color: aquamarine;
     /* i want the links on the bottom right of the header bar */
-    text-align: right;
+    /* text-align: right; */
     display: flex;
 }
 
 /* MAIN */
 main {
     padding: 15px;
+    /* display: flex; */
 }
 
 main section {
@@ -58,7 +59,7 @@ main section {
     height: 409px;
     text-align: center;
     border: 10px solid grey;
-    margin: 10px
+    margin: 10px;
 }
 
 main img {
@@ -159,6 +160,11 @@ footer ul {
     }
   }
   
+  @media screen and (max-width: 992px) {
+    footer {
+      background: orangered;
+    }
+  }
   /* Large smartphones - navbar changes color */
   @media screen and (max-width: 768px) {
     nav {
@@ -168,8 +174,8 @@ footer ul {
   
   /* Small smartphones - image placeholders change color */
   @media screen and (max-width: 576px) {
-    .sample-img {
-      background-color: #8ac4ff;
+    .card img {
+      background-color: greenyellow;
     }
   }
 /* main page style and font size */
