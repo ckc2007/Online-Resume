@@ -87,6 +87,7 @@ main img {
 }
 
 .card {
+    /* flex: flex-grow flex-shrink width% */
     flex: 0 1 30%;
     width: 409px;
     height: 409px;
@@ -194,7 +195,7 @@ footer ul {
       background-color: yellowgreen;
     }
   }
-  
+
  /* small */
   @media screen and (max-width: 570px) {
     .card {
