@@ -6,7 +6,7 @@
 }
 /* main page style and font size */
 body {
-    background-color: rgb(251, 250, 250);
+    background-color: rgb(245, 245, 245);
 }
 
 a {
@@ -22,7 +22,7 @@ p {
 header {
     padding: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
-    background-color: rgb(112, 112, 232);
+    background-color: rgb(121, 121, 240);
     color: #ffffff;
 }
 /* main title - my name */
@@ -74,9 +74,9 @@ main {
 main section {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    height: 400px;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color: #94c7e7;
     color: #ffffff;
 }
 
