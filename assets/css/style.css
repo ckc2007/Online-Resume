@@ -65,6 +65,20 @@ main section {
   padding: 10px;
 }
 
+/* headings */
+h2 {
+  font-size: larger;
+  font-weight: bold;
+  padding: 5px;
+  background-color: rgb(194, 241, 255);
+}
+
+h3 {
+  font-size: medium;
+  font-weight: 800;
+  padding: 5px;
+}
+
 /* in the work section, images need formatting */
 .work img {
   /* need to make my images square */
@@ -88,10 +102,16 @@ main section {
   background-color: rgb(214, 255, 255);
 }
 
-.resume {
-  /* margin-bottom: 15px; */
-  background-color: rgb(255, 242, 227);
+/* here is where we set the main work image to be the largest at all times - note flex 0 1 100%<<< */
+#main-work {
+  flex: 0 1 100%;
+  width: 409px;
+  height: 409px;
+  text-align: center;
+  border: 5px solid rgb(202, 197, 197);
+  margin: 10px;
 }
+
 /* this part is super important - this gave us the space betwee, and the wrap property, making the horizontal flow down and resize */
 .cards {
   display: flex;
@@ -109,33 +129,9 @@ main section {
   margin: 10px;
 }
 
-/* here is where we set the main work image to be the largest at all times - note flex 0 1 100%<<< */
-#main-work {
-  flex: 0 1 100%;
-  width: 409px;
-  height: 409px;
-  text-align: center;
-  border: 5px solid rgb(202, 197, 197);
-  margin: 10px;
-}
-
-/* when flex is implemented i want to make sure that it fills the whole row only on this one */
-/* #main-work {
-    width: 100%;
-} */
-
-/* headings */
-h2 {
-  font-size: larger;
-  font-weight: bold;
-  padding: 5px;
-  background-color: rgb(194, 241, 255);
-}
-
-h3 {
-  font-size: medium;
-  font-weight: 800;
-  padding: 5px;
+.resume {
+  /* margin-bottom: 15px; */
+  background-color: rgb(255, 242, 227);
 }
 
 /* footer */
