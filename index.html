@@ -14,32 +14,39 @@
         <!-- Chris Chorney name with css design on last name -->
         <h1>Chris <span id="chorney">Chorney</span></h1>
         <!-- make some kind of subtitle here display bottom righ under the nav bar area -->
+        <!-- tagline dissapears or changes to smaller on resize - column -->
         <p id="tagline">
         Music. Photography. Web Design.
         </p>
         <!-- Navbar with links that take you to the correct section -->
+        <!-- navbar items stack as column upon small resize -->
         <nav>
             <ul>
                 <li>
-                    <a href="#">About Me</a>
+                    <a href="about-me">About Me</a>
                 </li>
                 <li>
-                    <a href="#">Work</a>
+                    <a href="#work">Work</a>
                 </li>
                 <li>
-                    <a href="#">Contact Me</a>
+                    <a href="#contact-me">Contact Me</a>
                 </li>
                 <li>
-                    <a href="#">Resume</a>
+                    <a href="#resume">Resume</a>
                 </li>
             </ul>
         </nav>
     </header> -->
 
   <!-- Body -->
+  <!-- sections display as block but then stack column as they resize -->
   <main>
+      <!-- add an about me section here -->
+    <div class="about-me">
+        <h2>About Me</h2>
+    </div>  
     <!-- work section with first one as the largest on display -->
-    <div class="Work">
+    <div class="work">
       <section class="card">
         <header>Hawaii Classic Duo</header>
         <!-- display your press kit image here MAIN -->
@@ -96,6 +103,10 @@
         <p>other stuff?</p>
       </section>
     </div>
+      <!-- add a resume section here -->
+      <div class="resume">
+        <h2>Resume</h2>
+    </div> 
   </main>
 
   <!-- Footer -->
@@ -103,6 +114,30 @@
     <h3>
       Contact Me
     </h3>
+    <!-- add linkable text at the footer - displayed in a line, but stacked column on resize - find out how to make this semantic -->
+    <ul>
+        <li>
+            <a href="#">555-111-1111</a>
+        </li>
+        <li>
+            <a href="#">#######@gmail.com</a>
+        </li>
+        <li>
+            <a href="#">github</a>
+        </li>
+        <li>
+            <a href="#">linkedIn</a>
+        </li>
+        <li>
+            <a href="#">website</a>
+        </li>
+        <li>
+            <a href="#">discogs</a>
+        </li>
+        <li>
+            <a href="#">objkt</a>
+        </li>
+    </ul>
   </footer>
 </body>
 
