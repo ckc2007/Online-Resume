@@ -1,118 +1,120 @@
 /* global style */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: blueviolet;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
+  background-color: rgb(195, 131, 255);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", "Arial", sans-serif;
 }
 
 header {
-    width: 100%;
-    line-height: 30px;
-    padding: 15px;
-    color: whitesmoke;
-    background-color: blue;
+  width: 100%;
+  line-height: 25px;
+  padding: 15px;
+  color: whitesmoke;
+  background-color: rgb(94, 94, 233);
 }
 
+/* make my name slightly larger and brightly colored */
 header h1 {
-    color: yellow;
-    font-size: 30px;
-    text-align: left;
+  color: yellow;
+  font-size: 40px;
+  text-align: left;
 }
 
+/* i want my bio pic to be a circle */
 header img {
-    /* display: inline; */
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
+/* defines the color of my tagline if i want to change it later */
 #tagline {
-    color: white;
+  color: white;
 }
 
 nav {
-    background-color: aquamarine;
-    /* i want the links on the bottom right of the header bar */
-    text-align: right;
-    /* display: flex; */
+  background-color: rgb(206, 255, 239);
+  /* i want the links on the bottom right of the header bar */
+  text-align: right;
+  padding: 5px;
+}
+/* space out the list items so easier to read in nav */
+nav li {
+  margin: 5px;
+}
+/* for nav bar elements and footer elements i want in a line */
+.display-inline {
+  display: inline;
 }
 
 /* MAIN */
 main {
-    padding: 15px;
-    /* display: flex; */
+  padding: 15px;
 }
 
 main section {
-    /* eventually i want a left handed thick bar in blue */
-    border-bottom: 5px solid black;
-    padding: 10px;
+  /* i want a left handed thick bar in blue */
+  border-left: 5px solid darkblue;
+  padding: 10px;
 }
-
 
 main img {
-    /* padding: 5px; */
-    height: 350px;
-    width: 350px;
-    background-color: lightgreen;
-    margin: 0px;
-    padding: 20px;
-    border: 10px solid darkred;
-    /* width: 100%; */
+  /* padding: 5px; */
+  height: 350px;
+  width: 350px;
+  background-color: lightgreen;
+  margin: 0px;
+  padding: 20px;
+  border: 10px solid darkred;
 }
-
 
 /* sections */
 .about-me {
-    margin-bottom: 15px;
-    line-height: 20px;
-    background-color: antiquewhite;
+  margin-bottom: 15px;
+  line-height: 25px;
+  background-color: rgb(255, 246, 234);
 }
 
-.about-me h2 {
-    background-color:red;
+.work {
+  margin-bottom: 15px;
+  background-color: rgb(214, 255, 255);
 }
 
+.resume {
+  /* margin-bottom: 15px; */
+  background-color: rgb(255, 242, 227);
+}
 /* this part is super important - this gave us the space betwee, and the wrap property, making the horizontal flow down and resize */
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card {
-    /* flex: flex-grow flex-shrink width% */
-    flex: 0 1 30%;
-    width: 409px;
-    height: 409px;
-    text-align: center;
-    border: 10px solid grey;
-    margin: 10px;
+  /* flex: flex-grow flex-shrink width% */
+  flex: 0 1 30%;
+  width: 409px;
+  height: 409px;
+  text-align: center;
+  border: 10px solid grey;
+  margin: 10px;
 }
 
 /* here is where we set the main work image to be the largest at all times - note flex 0 1 100%<<< */
 #main-work {
-    flex: 0 1 100%;
-    width: 409px;
-    height: 409px;
-    text-align: center;
-    border: 10px solid grey;
-    margin: 10px;
-}
-
-.work {
-    margin-bottom: 15px;
-    background-color: aqua;
-}
-
-.work h2 {
-    /* to get color on headings */
-    background-color:red;
+  flex: 0 1 100%;
+  width: 409px;
+  height: 409px;
+  text-align: center;
+  border: 10px solid grey;
+  margin: 10px;
 }
 
 /* when flex is implemented i want to make sure that it fills the whole row only on this one */
@@ -120,84 +122,71 @@ main img {
     width: 100%;
 } */
 
-.resume {
-    /* margin-bottom: 15px; */
-    background-color: bisque;
-}
-
-.resume h2 {
-    background-color:red;
-}
-
 /* headings */
 h2 {
-    font-size: larger;
-    font-weight: bold;
+  font-size: larger;
+  font-weight: bold;
+  padding: 5px;
+  background-color: rgb(194, 241, 255);
 }
 
 h3 {
-    font-size: medium;
-    font-weight: 800;
+  font-size: medium;
+  font-weight: 800;
+  padding: 5px;
 }
-
-
 
 /* footer */
 footer {
-    line-height: 30px;
-    padding: 15px;
-    color: whitesmoke;
-    background-color: lightblue;
+  line-height: 30px;
+  padding: 15px;
+  color: whitesmoke;
+  background-color: lightblue;
 }
 
 footer h4 {
-    font-size: 30px;
-    color: white;
-    text-align: center;
+  font-size: 30px;
+  color: white;
+  text-align: center;
 }
 
 /* makes the footer contact links bold */
 footer .contact-bold {
-    font-weight:bold;
+  font-weight: bold;
 }
 
 footer ul {
-    text-align: center;
+  text-align: center;
 }
 
-.display-inline {
-    display: inline;
+footer li {
+  font-size: 20px;
+  margin: 5px;
+}
+
+/* Media screen query for dynmaic website */
+/* remember to go from large to small if using max-width for screen size media query */
+
+/* large */
+@media screen and (max-width: 990px) {
+  header {
+    background: orangered;
   }
-
-
-
-
-  /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
-
-/* Tablets - header changes color */
-@media screen and (max-width: 992px) {
-    header {
-      background: orangered;
-    }
+  footer {
+    background: orangered;
   }
-  
-  /* large */
-  @media screen and (max-width: 990px) {
-    footer {
-      background: orangered;
-    }
-  }
-  
-  /* med */
-  @media screen and (max-width: 760px) {
-    nav {
-      background-color: yellowgreen;
-    }
-  }
+}
 
- /* small */
-  @media screen and (max-width: 570px) {
-    .card {
-      background-color: greenyellow;
-    }
+/* med */
+@media screen and (max-width: 760px) {
+  nav {
+    background-color: yellowgreen;
   }
+}
+
+/* small */
+@media screen and (max-width: 570px) {
+  .card {
+    background-color: greenyellow;
+  }
+}
