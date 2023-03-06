@@ -20,6 +20,7 @@ header {
 header h1 {
     color: yellow;
     font-size: 30px;
+    text-align: left;
 }
 
 header img {
@@ -34,6 +35,8 @@ header img {
 
 header nav {
     background-color: aquamarine;
+    /* i want the links on the bottom right of the header bar */
+    text-align: right;
 }
 
 /* MAIN */
@@ -60,6 +63,11 @@ main img {
 
 .work {
     background-color: aqua;
+}
+
+.work h2 {
+    /* to get color on headings */
+    background-color:red;
 }
 
 /* when flex is implemented i want to make sure that it fills the whole row only on this one */
@@ -94,8 +102,23 @@ footer {
 
 footer h4 {
     font-size: 30px;
-    color: beige;
+    color: white;
+    text-align: center;
 }
+
+/* makes the footer contact links bold */
+footer .contact-bold {
+    font-weight:bold;
+}
+
+footer ul {
+    text-align: center;
+}
+
+.display-inline {
+    display: inline;
+  }
+
 
 /* main page style and font size */
 /* body {
