@@ -139,6 +139,8 @@ h3 {
 }
 
 .resume li {
+  font-weight: 600;
+  margin: 5px;
   /* i want this to be clickable to show unshow the files */
 }
 
