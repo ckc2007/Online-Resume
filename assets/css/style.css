@@ -160,24 +160,32 @@ footer ul {
     }
   }
   
-  @media screen and (max-width: 992px) {
+  /* large */
+  @media screen and (max-width: 990px) {
     footer {
       background: orangered;
     }
   }
-  /* Large smartphones - navbar changes color */
-  @media screen and (max-width: 768px) {
+  
+  /* med */
+  @media screen and (max-width: 760px) {
     nav {
       background-color: yellowgreen;
     }
   }
   
-  /* Small smartphones - image placeholders change color */
-  @media screen and (max-width: 576px) {
-    .card img {
+ /* small */
+  @media screen and (max-width: 570px) {
+    .card {
       background-color: greenyellow;
     }
   }
+
+
+
+
+
+  
 /* main page style and font size */
 /* body {
     background-color: rgb(245, 245, 245);
