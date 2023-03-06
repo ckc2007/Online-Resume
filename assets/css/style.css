@@ -85,6 +85,17 @@ main img {
     background-color:red;
 }
 
+/* this part is super important - this gave us the space betwee, and the wrap property, making the horizontal flow down and resize */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* #main-work {
+    flex-grow: 200;
+} */
+
 .work {
     margin-bottom: 15px;
     background-color: aqua;
