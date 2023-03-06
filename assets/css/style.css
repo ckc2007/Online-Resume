@@ -21,19 +21,19 @@ p {
 
 /* header, top; nav, top right */
 header {
-    padding: 20px;
+    padding: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
-    background-color: #2a607c;
+    background-color: rgb(112, 112, 232);
     color: #ffffff;
 }
-/* brand name: 'Horiseon', top left */
+/* main title - my name */
 h1 {
     display: inline-block;
-    font-size: 48px;
+    font-size: 50px;
 }
-/* brand name: color on 'seo', top left */
-h1 #seo {
-    color: #d9dcd6;
+/* slight coloration on last name */
+h1 #chorney {
+    color: whitesmoke;
 }
 /* nav, top right */
 header nav {
