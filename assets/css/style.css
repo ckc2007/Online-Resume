@@ -39,8 +39,8 @@ header img {
 nav {
     background-color: aquamarine;
     /* i want the links on the bottom right of the header bar */
-    /* text-align: right; */
-    display: flex;
+    text-align: right;
+    /* display: flex; */
 }
 
 /* MAIN */
@@ -54,13 +54,7 @@ main section {
     border-bottom: 5px solid black;
     padding: 10px;
 }
-.card {
-    width: 409px;
-    height: 409px;
-    text-align: center;
-    border: 10px solid grey;
-    margin: 10px;
-}
+
 
 main img {
     /* padding: 5px; */
@@ -92,9 +86,24 @@ main img {
     justify-content: space-between;
 }
 
-/* #main-work {
-    flex-grow: 200;
-} */
+.card {
+    flex: 0 1 30%;
+    width: 409px;
+    height: 409px;
+    text-align: center;
+    border: 10px solid grey;
+    margin: 10px;
+}
+
+/* here is where we set the main work image to be the largest at all times - note flex 0 1 100%<<< */
+#main-work {
+    flex: 0 1 100%;
+    width: 409px;
+    height: 409px;
+    text-align: center;
+    border: 10px solid grey;
+    margin: 10px;
+}
 
 .work {
     margin-bottom: 15px;
