@@ -159,7 +159,8 @@ footer ul {
 
 footer li {
   font-size: 20px;
-  margin: 5px;
+  margin: 15px;
+  border-bottom: 5px solid rgb(36, 36, 132);
 }
 
 /* Media screen query for dynmaic website */
