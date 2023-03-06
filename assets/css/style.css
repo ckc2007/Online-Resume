@@ -50,14 +50,18 @@ main section {
     padding: 10px;
 }
 .card {
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
 }
 
 main img {
     /* padding: 5px; */
     height: 350px;
     width: 350px;
+    background-color: lightgreen;
+    margin: 20px;
+    padding: 20px;
+    border: 10px solid darkred;
 }
 
 
