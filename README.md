@@ -3,7 +3,7 @@
 ## Description
 
 ```
-I have created a personal resume page that has dynamic css elements that change when the screen is re-sized. focusable elements also change dynamically depending on their current state. 
+I have created a personal resume page that has dynamic css elements that change when the screen is re-sized. focusable elements also change dynamically depending on their current state.
 
 The style is original - and meant to resemeble the homeowrk readme mock-up, though not precisely in this case.
 
@@ -24,7 +24,7 @@ SO THAT I can have all my work in one place as a kind of online resume, and to d
 GIVEN I need to create a comprehensive online portfolio
 WHEN I scroll to the work section
 THEN the most important work is larger than the others (first)
-WHEN I click on links in the nav bar, 
+WHEN I click on links in the nav bar,
 THEN they take me to the relevant sections
 WHEN I click on an image in the work section
 THEN it takes me to the deployed page
@@ -36,13 +36,9 @@ WHEN I scroll to the bottome
 THEN I find a footer with relevant contact info and links
 ```
 
-## Mock-Up
+## Deployed Page
 
-here is a screenshot of my deployed page:
-```
 [https://ckc2007.github.io/Online-Resume/]
-```
 
+A screenshot of the deployed resume page:
 ![demo page](./assets/images/wk-02-deployed.png)
-
-
