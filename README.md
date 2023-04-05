@@ -1,4 +1,4 @@
-# Homework Week 02 - CSS Portfolio
+# Online Resume
 
 ## Description
 
