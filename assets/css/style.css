@@ -28,7 +28,7 @@ header {
   vertical-align: middle;
 }
 
-/* make my name slightly larger and brightly colored */
+/* Name slightly larger */
 header h1 {
   color: #ffffff;
   font-size: 36px;
@@ -36,7 +36,7 @@ header h1 {
   margin-bottom: 10px;
 }
 
-/* i want my bio pic to be a circle */
+/* Bio pic circle shape */
 header img {
   width: 60px;
   height: 60px;
@@ -44,7 +44,7 @@ header img {
   margin-left: 5px;
 }
 
-/* defines the color of my tagline if i want to change it later */
+/* defines the color of tagline */
 #tagline {
   color: #fff;
   margin-top: 10px;
@@ -54,12 +54,12 @@ header img {
 
 nav {
   background-color: #3863ed;
-  /* i want the links on the bottom right of the header bar */
+  /* links on the right of the header bar */
   text-align: right;
   padding: 5px;
 }
 
-/* space out the list items so easier to read in nav */
+/* space out the list items in nav */
 nav li {
   margin: 5px;
   display: inline-block;
@@ -74,7 +74,7 @@ a {
 
 a:hover {
   transition: color 0.4s ease;
-  color: aqua; /* Apply the desired hover color */
+  color: aqua; /* Apply hover color */
   font-size: 110%;
   transition: color 0.3s ease;
 }
@@ -86,7 +86,7 @@ main {
 
 /* for about me, work and resume sections */
 main section {
-  /* i want a left-handed thick bar in blue */
+  /* left-handed thick bar in blue */
   border-left: 5px solid #3863ed;
   padding: 10px;
   margin-bottom: 20px;
@@ -140,11 +140,7 @@ h3 {
   margin-right: 20px; /* Add margin between cards */
 }
 
-/* .card--full {
-  flex: 0 1 100%;
-} */
-
-/* here is where we set the main work image to be the largest at all times - note flex 0 1 100%<<< */
+/* set the main work image to be the largest at all times - note flex 0 1 100%<<< */
 #main-work {
   grid-column: 1 / -1; /* Span across all columns */
   flex: 0 1 100%;
@@ -156,7 +152,7 @@ h3 {
   padding: 20px;
 }
 
-/* in the work section, images need formatting */
+/* in the work section, images formatting */
 .work img {
   height: 350px;
   width: 100%;
@@ -171,7 +167,7 @@ h3 {
 
 .work img:hover {
   transform: scale(1.05);
-  border-color: aqua; /* Apply the desired hover border color */
+  border-color: aqua; /* Apply hover border color */
 }
 
 .resume {
