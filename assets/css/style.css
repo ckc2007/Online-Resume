@@ -1,4 +1,4 @@
-/* global style */
+/* Global styles */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,259 +6,285 @@
 }
 
 body {
-  background-color: rgb(66, 123, 158);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", "Arial", sans-serif;
+  background-color: #ffffff;
+  color: black;
 }
 
 header {
-  width: 100%;
-  line-height: 25px;
-  padding: 15px;
-  color: whitesmoke;
-  background-color: rgb(62, 62, 152);
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  background-color: #3863ed;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.display-inline {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* make my name slightly larger and brightly colored */
 header h1 {
-  color: yellow;
-  font-size: 40px;
-  text-align: left;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 /* i want my bio pic to be a circle */
 header img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
+  margin-left: 5px;
 }
 
 /* defines the color of my tagline if i want to change it later */
 #tagline {
-  color: white;
+  color: #fff;
+  margin-top: 10px;
+  font-size: 18px;
+  font-style: italic;
 }
 
 nav {
-  background-color: rgb(206, 255, 239);
+  background-color: #3863ed;
   /* i want the links on the bottom right of the header bar */
   text-align: right;
   padding: 5px;
 }
+
 /* space out the list items so easier to read in nav */
 nav li {
   margin: 5px;
+  display: inline-block;
 }
-/* for nav bar elements and footer elements i want in a line */
-.display-inline {
-  display: inline;
+
+/* links */
+a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  transition: color 0.4s ease;
+  color: aqua; /* Apply the desired hover color */
+  font-size: 110%;
+  transition: color 0.3s ease;
 }
 
 /* MAIN */
 main {
-  padding: 15px;
+  padding: 20px;
 }
 
 /* for about me, work and resume sections */
 main section {
-  /* i want a left handed thick bar in blue */
-  border-left: 5px solid darkblue;
+  /* i want a left-handed thick bar in blue */
+  border-left: 5px solid #3863ed;
   padding: 10px;
+  margin-bottom: 20px;
 }
 
 /* headings */
 h2 {
-  font-size: larger;
+  font-size: 24px;
   font-weight: bold;
-  padding: 5px;
-  background-color: rgb(194, 241, 255);
+  padding: 10px;
+  background-color: rgb(224, 234, 255);
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 h3 {
-  font-size: medium;
-  font-weight: 800;
-  padding: 5px;
-}
-
-/* in the work section, images need formatting */
-.work img {
-  /* need to make my images square */
-  height: 350px;
-  width: 350px;
-  background-color: rgb(205, 255, 205);
-  margin: 0px;
-  padding: 20px;
-  /* border: 5px solid rgb(173, 175, 247); */
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
 }
 
 /* sections */
 .about-me {
-  margin-bottom: 15px;
-  line-height: 25px;
-  background-color: rgb(255, 246, 234);
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+  line-height: 1.5;
 }
 
 .work {
-  margin-bottom: 15px;
-  background-color: rgb(214, 255, 255);
-}
-
-/* here is where we set the main work image to be the largest at all times - note flex 0 1 100%<<< */
-#main-work {
-  flex: 0 1 100%;
-  /* width: 500px; */
-  height: 550px;
-  text-align: center;
-  /* for now only the first work item will have a solid border to make it stand out */
-  border: 5px solid rgb(202, 197, 197);
-  padding: 15px;
-  margin: 10px;
-}
-/* style for the main work image - needs to be larger than the others */
-#biggest-image {
-  height: 450px;
-  width: 600px;
-  background-color: rgb(205, 255, 205);
-  margin: 0px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
   padding: 20px;
-  /* border: 5px solid rgb(173, 175, 247); */
+  margin-bottom: 30px;
 }
 
-/* this part is super important - this gave us the space between, and the wrap property, making the horizontal flow down and resize */
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
 }
 
 .card {
-  /* flex: flex-grow flex-shrink width% */
-  flex: 0 1 30%;
-  width: 409px;
-  height: 409px;
-  text-align: center;
-  /* border: 5px solid rgb(200, 200, 200); */
-  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  flex: 0 1 calc(50% - 10px); /* Set width to 50% minus margin */
+  margin-right: 20px; /* Add margin between cards */
+}
+
+/* .card--full {
+  flex: 0 1 100%;
+} */
+
+/* here is where we set the main work image to be the largest at all times - note flex 0 1 100%<<< */
+#main-work {
+  grid-column: 1 / -1; /* Span across all columns */
+  flex: 0 1 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* in the work section, images need formatting */
+.work img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  background-color: rgb(250, 250, 250);
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, border-color 0.3s ease; /* Add transition for border color */
+  border: 1px solid transparent; /* Add initial border */
+}
+
+.work img:hover {
+  transform: scale(1.05);
+  border-color: aqua; /* Apply the desired hover border color */
 }
 
 .resume {
-  background-color: rgb(255, 242, 227);
-}
-
-.resume h2 {
-  margin-bottom: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
 }
 
 .resume ul {
-    list-style:circle;
+  list-style-type: none; /* Remove default list bullet points */
+  padding: 0;
 }
 
-.resume li {
-  font-weight: 600;
-  margin: 5px;
-  margin-left: 30px;
-  /* i want this to be clickable to show unshow the files */
+.resume ul li {
+  background-color: #f5f5f5;
+  padding: 10px; /* Adjust the padding to increase spacing */
+  margin-bottom: 5px; /* Add margin below each list item */
+  position: relative; /* Enable relative positioning for the dot */
+  transition: transform 0.3s ease; /* Add smooth transition effect */
 }
 
-/* footer */
+.resume ul li:before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  transform: translate(-50%, -50%); /* Center the dot vertically */
+}
+
+.resume ul li:hover {
+  color: white; /* Set the text color to white on hover */
+  transform: scale(1.01); /* Increase the size by 1% on hover */
+  background-color: aqua; /* Change background color on hover */
+}
+
+.resume ul li:nth-child(1) {
+  background-color: rgb(203, 220, 225);
+}
+
+.resume ul li:nth-child(2) {
+  background-color: rgb(220, 236, 220);
+}
+
+.resume ul li:hover {
+  background-color: aqua; /* Change background color on hover */
+}
+
 footer {
-  line-height: 30px;
-  padding: 15px;
-  color: whitesmoke;
-  background-color: lightblue;
+  background-color: #3863ed;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
 footer h4 {
-  font-size: 30px;
-  color: white;
-  text-align: center;
-}
-
-/* makes the footer contact links bold */
-footer .contact-bold {
-  font-weight: bold;
+  margin-bottom: 10px; /* Add space below the "Contact Me" heading */
 }
 
 footer ul {
-  text-align: center;
+  padding: 0;
+  margin: 10px 0; /* Add space above and below the list */
 }
 
 footer li {
-  font-size: 20px;
-  margin: 15px;
-  border-bottom: 5px solid rgb(36, 36, 132);
+  display: inline-block;
+  margin-right: 10px; /* Increase spacing between the links */
 }
 
-/* Media screen query for dynmaic website */
-/* remember to go from large to small if using max-width for screen size media query */
+footer li:last-child {
+  margin-right: 0; /* Remove margin from the last link */
+}
 
-/* large */
-@media screen and (max-width: 990px) {
+footer a:hover {
+  transition: color 0.4s ease;
+  color: aqua; /* Apply the desired hover color */
+}
+
+/* media queries */
+@media screen and (min-width: 768px) {
+  /* for larger screens */
   header {
-    background: orangered;
+    padding: 30px;
   }
-  footer {
-    background: orangered;
-  }
-}
 
-/* med */
-@media screen and (max-width: 760px) {
+  /* make the tagline a bit larger */
+  #tagline {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* for larger screens, align the nav items to the right */
   nav {
-    background-color: yellowgreen;
+    text-align: right;
   }
-}
 
-/* small */
-@media screen and (max-width: 570px) {
-  .card {
-    background-color: greenyellow;
+  /* give more padding to sections */
+  main section {
+    padding: 20px;
   }
-}
 
-/* buttons and pseudo classes below: */
-img:hover {
-  background-color: #8996cf;
-  color: rgb(232, 222, 222);
-}
+  /* increase the font size of h2 headings */
+  h2 {
+    font-size: 28px;
+  }
 
-img:active {
-  font-size: 150%;
-  box-shadow: 0 0 10px rgb(128, 125, 125) inset;
-}
-
-img:focus {
-  outline: none;
-  border-color: #8ac4ff;
-}
-
-/* biggest image response */
-#biggest-image:hover {
-  background-color: #97d0df;
-  color: #fff;
-}
-
-#biggest-image:active {
-  font-size: 150%;
-  box-shadow: 0 0 10px rgb(131, 127, 127) inset;
-}
-
-#biggest-image:focus {
-  outline: none;
-  border-color: #b2d1f0;
-}
-
-/* nav buttons/list items */
-li:hover {
-  background-color: #fed7d1;
-  color: rgb(223, 205, 205);
-}
-
-li:active {
-  font-size: 150%;
-  box-shadow: 0 0 10px rgb(79, 77, 77) inset;
-}
-
-li:focus {
-  outline: none;
-  border-color: #b8dcff;
+  /* make the work images larger on larger screens */
+  .work img {
+    height: 450px;
+  }
 }
